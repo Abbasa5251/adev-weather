@@ -9,6 +9,7 @@ import {
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "@/context/theme-provider";
+import CitySearch from "./city-search";
 
 function Header() {
 	const { setTheme } = useTheme();
@@ -21,9 +22,8 @@ function Header() {
 					</h1>
 				</Link>
 
-				<div>
-					{/* Search */}
-					{/* Theme toggle */}
+				<div className="flex gap-4">
+					<CitySearch />
 					<DropdownMenu>
 						<DropdownMenuTrigger asChild>
 							<Button variant="outline" size="icon">
